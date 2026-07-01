@@ -182,7 +182,7 @@ def get_demo_report(features_data):
             "investigacio": "Alta. La fragmentació puntual i la grandària mitjana suggereixen un bon perfil per al detall científic.",
             "enginyeria": "Alta. El pensament lògic-deductiu extret s'adapta molt bé a la resolució estructurada de problemes.",
             "creativitat": "Alta. Grafia amb bones corbes i espai, ideal per al disseny i solucions fora de la caixa.",
-            "atencio_public: "Alta. El to de comunicació empàtic i assertiu és molt adequat per a la cura de l'usuari.",
+            "atencio_public": "Alta. El to de comunicació empàtic i assertiu és molt adequat per a la cura de l'usuari.",
             "gestio": "Alta. L'equilibri general de l'escriptura és compatible amb la coordinació de recursos i projectes.",
             "treball_individual": "Mitjana-Alta. Té prou autonomia i autocontrol per avançar de manera independent.",
             "treball_en_equip": "Alta. Preferència per a la cooperació i per compartir fites de manera col·laborativa."
