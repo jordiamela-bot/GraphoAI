@@ -25,11 +25,18 @@ def create_mock_handwriting_image(filepath):
     img.save(filepath)
     print(f"Mock handwriting image created at: {filepath}")
 
-def send_multipart_form(url, file_path):
+def send_multipart_form(url, file_path, subject_name="Albert Einstein"):
     """Sends a file via HTTP POST multipart/form-data using only standard library."""
     boundary = '----WebKitFormBoundary7MA4YWxkTrZu0gW'
     data = []
     
+    # Add subject name field
+    data.append(f'--{boundary}')
+    data.append('Content-Disposition: form-data; name="name"')
+    data.append('')
+    data.append(subject_name)
+    
+    # Add file field
     filename = os.path.basename(file_path)
     mime_type, _ = mimetypes.guess_type(file_path)
     if not mime_type:
